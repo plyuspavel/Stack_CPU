@@ -119,7 +119,7 @@ int push_st(Stack* st, int val)
     return 1;
 }
 
-/// Если элементов в стеке нет, то возвращает 0, ставит errno = EACCESS
+/// Р•СЃР»Рё СЌР»РµРјРµРЅС‚РѕРІ РІ СЃС‚РµРєРµ РЅРµС‚, С‚Рѕ РІРѕР·РІСЂР°С‰Р°РµС‚ 0, СЃС‚Р°РІРёС‚ errno = EACCESS
 int pop_st(Stack* st)
 {
     ASSERT_OK(Stack, st);

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://C:/MinGW/lib/gcc/mingw32/4.8.1/include/my_libraries/cmdJumps" charset="windows-1251" />
+    <file url="file://C:/MinGW/lib/gcc/mingw32/4.8.1/include/my_libraries/cmdList" charset="windows-1251" />
+    <file url="file://C:/MinGW/lib/gcc/mingw32/4.8.1/include/my_libraries/cmdParamList" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CPU.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Stack.h" charset="windows-1251" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

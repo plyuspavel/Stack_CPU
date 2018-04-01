@@ -1,0 +1,3 @@
+C:/Users/plyus/ClionProjects/Stack_CPU/cmake-build-debug/CMakeFiles/Stack_CPU.dir
+C:/Users/plyus/ClionProjects/Stack_CPU/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/plyus/ClionProjects/Stack_CPU/cmake-build-debug/CMakeFiles/rebuild_cache.dir

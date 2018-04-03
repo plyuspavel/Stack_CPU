@@ -1,0 +1,25 @@
+//—писок команд в формате CMD(им€, номер, исполн€емый код)
+#include "_Lang"
+
+CMD(NOP, 0, {}, {addCom(com_array, &com_num, 0x60, 0);})
+CMD(PUSH, 1, {_PUSH(com_array[++i]);}, {})
+CMD(PUSH_X, 2, {_PUSH_X}, {})
+CMD(POP, 3, {printf("%d\n", _POP);}, {})
+CMD(POP_X, 4, {_POP_X}, {})
+CMD(ADD, 5, {add_cpu(This);}, {addCom(com_array, &com_num, 0x58, 0x5B, 0x48, 0x01, 0xDB, 0x50, 0);})
+CMD(SUB, 6, {sub_cpu(This);}, {addCom(com_array, &com_num, 0x58, 0x5B, 0x48, 0x29, 0xDB, 0x50, 0);})
+CMD(MUL, 7, {mul_cpu(This);}, {addCom(com_array, &com_num, 0x58, 0x5B, 0x48, 0x31, 0xD2, 0x48, 0xF7, 0xE3, 0x50, 0);})
+CMD(DIV, 8, {div_cpu(This);}, {addCom(com_array, &com_num, 0x58, 0x5B, 0x48, 0x31, 0xD2, 0x48, 0xF7, 0xF3, 0x50, 0);})
+CMD(END, 9, {goto stop;}, {addCom(com_array, &com_num, 0xC3, 0);})
+CMD(JA, 10,  _DOJUMP(>), {})
+CMD(JAE, 11, _DOJUMP(>=), {})
+CMD(JB, 12,  _DOJUMP(<), {})
+CMD(JBE, 13, _DOJUMP(<=), {})
+CMD(JE, 14,  _DOJUMP(==), {})
+CMD(JNE, 15, _DOJUMP(!=), {})
+CMD(JMP, 16, {i = com_array[i+1] - 1;}, {})
+CMD(DEL, 17, {_POP;}, {addCom(com_array, &com_num, 0x48, 0x83, 0xC4, 0x08, 0)};)
+CMD(IN, 18, {_IN , {})
+CMD(SQRT, 19, {int value = _POP; value = (int)(sqrt(value)); _PUSH(value);}, {addCom(com_array, &com_num, 0x60, 0);})
+
+#include "_LangStop"

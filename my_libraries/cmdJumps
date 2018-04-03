@@ -1,0 +1,8 @@
+//Список имен "прыжков"
+JUMP(JA)
+JUMP(JB)
+JUMP(JAE)
+JUMP(JBE)
+JUMP(JE)
+JUMP(JNE)
+JUMP(JMP)

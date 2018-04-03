@@ -1,0 +1,5 @@
+#undef _DOJUMP
+#undef _PUSH
+#undef _IN
+#undef _PUSH_X
+#undef _POP_X

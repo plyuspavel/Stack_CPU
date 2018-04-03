@@ -1,0 +1,6 @@
+#define _DOJUMP(operator) {int temp1 = pop_st(&This->stack); int temp2 = pop_st(&This->stack); push_st(&This->stack, temp2); push_st(&This->stack, temp1); if (temp1 operator temp2) i = com_array[i+1] - 1; else i++;}
+#define _PUSH(elem) push_st(&This->stack, elem)
+#define _POP pop_st(&This->stack)
+#define _IN int value = 0; printf("Enter new int value>\n"); if(!scanf("%d", &value)) errno = EIO; _PUSH(value);}
+#define _PUSH_X i++; switch(com_array[i]) {case 1: _PUSH(This->ax); break; case 2: _PUSH(This->bx); break; case 3: _PUSH(This->cx); break; default: errno = EINVAL; assert(0);}
+#define _POP_X i++; switch(com_array[i]) {case 1: This->ax = _POP; break; case 2: This->bx = _POP; break; case 3: This->cx = _POP; break; default: errno = EINVAL; assert(0);}
